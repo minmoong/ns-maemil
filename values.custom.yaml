@@ -1,6 +1,0 @@
-components:
-  wsDaemon:
-    containerRuntime:
-      nodeRoots:
-        - /var/snap/microk8s/common/run/containerd/io.containerd.runtime.v2.task/k8s.io # folder who contains your container
-        - /var/snap/microk8s/common/var/lib/containerd/io.containerd.runtime.v2.task/k8s.io
