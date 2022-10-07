@@ -1,5 +1,5 @@
 async function removeTodo(grd: number, grp: number, todoId: string) {
-  return await fetch('https://api.maemil.kr/api/todo/removeTodo', {
+  return await fetch('/api/todo/removeTodo', {
       method: 'POST',
       headers: {
           'Content-Type': 'application/json'
