@@ -17,7 +17,6 @@ export const POST: RequestHandler = async ({ request }) => {
 
   let todos: Todo[] = JSON.parse(res.todos)
   todos = todos.filter(todo => todo.todoId !== todoId)
-  console.log(todos)
 
   if (todos.length === 0) {
     await prisma.todos.delete({
@@ -26,7 +25,7 @@ export const POST: RequestHandler = async ({ request }) => {
   } else {
     await prisma.todos.update({
       where: { todos: res.todos },
-      data: { todos: todos as any }
+      data: { todos: JSON.stringify(todos) }
     })
   }
 
