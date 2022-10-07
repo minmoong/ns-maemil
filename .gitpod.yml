@@ -1,0 +1,6 @@
+image: gitpod/workspace-postgres
+
+tasks:
+  - init: npm install
+    command: npm run dev
+  - command: npx prisma studio
