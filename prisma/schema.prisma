@@ -10,7 +10,8 @@ generator client {
 }
 
 model Todos {
+  classId String @id
   grd Int
   grp Int
-  todos String @id
+  todos String
 }
