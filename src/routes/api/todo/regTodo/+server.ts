@@ -17,7 +17,7 @@ export const POST: RequestHandler = async ({ request }) => {
     })
   } else {
     let todos = JSON.parse(res.todos)
-    todos = [{ todoId, desc, createdAt: new Date() }, ...todos]
+    todos = JSON.stringify([{ todoId, desc, createdAt: new Date() }, ...todos])
     await prisma.todos.update({
       where: { todos: res.todos },
       data: { todos }
