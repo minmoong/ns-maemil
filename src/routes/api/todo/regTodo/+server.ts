@@ -23,4 +23,6 @@ export const POST: RequestHandler = async ({ request }) => {
       data: { todos }
     })
   }
+
+  return json({ success: true })
 }
