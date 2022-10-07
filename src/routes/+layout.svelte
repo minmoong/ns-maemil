@@ -6,3 +6,56 @@
 <Navbar />
 <slot></slot>
 <Footer />
+
+<style lang="scss" global>
+  @font-face {
+    font-family: 'SUIT-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  * {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    margin: 0;
+    padding: 0;
+    font-family: 'SUIT-Medium';
+  }
+
+  body {
+    /* background-color: #F5F7FA; */
+    background-color: #fff;
+  }
+
+  a {
+  text-decoration: none;
+  }
+
+  .focus-shadow:focus {
+    box-shadow: 0 0 0 0.2rem rgb(0 140 255 / 25%);
+  }
+
+  ::selection {
+    background: rgb(175, 201, 243);
+  }
+
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #bbb;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+  }
+
+  ::-webkit-scrollbar-thumb:active {
+    background: #888;
+  }
+</style>
