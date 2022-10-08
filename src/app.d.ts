@@ -7,3 +7,8 @@ declare namespace App {
 	// interface Error {}
 	// interface Platform {}
 }
+
+declare module "comcigan-parser" {
+	var noTypeInfoYet: any; // any var name here really
+	export = noTypeInfoYet;
+}
