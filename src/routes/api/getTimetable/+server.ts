@@ -1,7 +1,7 @@
 import { createRequire } from 'module'
 import { json, type RequestHandler } from '@sveltejs/kit'
 
-const require = createRequire('file:///var/task/vercel/path0/.svelte-kit/output/server/entries/pages/_page.svelte.js')
+const require = createRequire(import.meta.url)
 const Timetable = require('comcigan-parser')
 const timetable = new Timetable()
 
