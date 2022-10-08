@@ -1,8 +1,7 @@
 import { createRequire } from 'module'
 import { json, type RequestHandler } from '@sveltejs/kit'
 
-// const require = createRequire(import.meta.url)
-console.log(require)
+// const require = createRequire(import.meta.url)\
 // const Timetable = require('comcigan-parser')
 // const timetable = new Timetable()
 
