@@ -3,7 +3,7 @@
 
   const navItems = [
       { name: '홈', icon: 'HomeIcon', to: '/' },
-      { name: '커뮤니티', icon: 'CommunityIcon', to: '/community' }
+    //   { name: '커뮤니티', icon: 'CommunityIcon', to: '/community' }
   ]
 </script>
 
