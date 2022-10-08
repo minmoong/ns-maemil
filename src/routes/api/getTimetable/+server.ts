@@ -13,6 +13,6 @@ export const GET: RequestHandler = async () => {
     // await timetable.setSchool(65332)
     // return json(await timetable.getTimetable())
     console.log(import.meta.url)
-    console.log(require)
+    // console.log(require)
     return json(1)
 }
