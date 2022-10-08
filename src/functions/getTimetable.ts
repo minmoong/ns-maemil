@@ -1,6 +1,13 @@
+import { createRequire } from 'module'
+
+const require = createRequire(import.meta.url)
+const Timetable = require('comcigan-parser')
+const timetable = new Timetable()
+
 async function getTimetable() {
-  let data = await fetch('/api/getTimetable').then(res => res.json())
-  return data
+  await timetable.init()
+  await timetable.setSchool(65332)
+  return await timetable.getTimetable()
 }
 
-export default getTimetable;
+export default getTimetable

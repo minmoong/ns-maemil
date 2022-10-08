@@ -14,7 +14,7 @@
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
-		"module": "^1.2.5",
+		"module": "^1.0.0",
 		"prisma": "^4.4.0",
 		"sass": "^1.55.0",
 		"svelte": "^3.44.0",
