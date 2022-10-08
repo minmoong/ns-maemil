@@ -1,9 +1,10 @@
 import { createRequire } from 'module'
 import { json, type RequestHandler } from '@sveltejs/kit'
 
-const require = createRequire(import.meta.url)
-const Timetable = require('comcigan-parser')
-const timetable = new Timetable()
+// const require = createRequire(import.meta.url)
+console.log(require)
+// const Timetable = require('comcigan-parser')
+// const timetable = new Timetable()
 
 export const GET: RequestHandler = async () => {
     // console.log('이거 보이니?이거 보이니?이거 보이니?이거 보이니?이거 보이니?이거 보이니?이거 보이니?이거 보이니?이거 보이니?이거 보이니?')
