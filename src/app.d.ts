@@ -8,7 +8,7 @@ declare namespace App {
 	// interface Platform {}
 }
 
-declare module "comcigan-parser" {
-	var noTypeInfoYet: any; // any var name here really
-	export = noTypeInfoYet;
+declare module 'comcigan-parser' {
+	let any: any;
+	export = any;
 }
