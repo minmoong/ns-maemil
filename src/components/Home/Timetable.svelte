@@ -1,11 +1,12 @@
 <script lang="ts">
   import getTimetable from '~/functions/getTimetable'
-import { SyncLoader } from 'svelte-loading-spinners'
-  import updateGrdp from '~/firebase/updateGrdp'
+  import { SyncLoader } from 'svelte-loading-spinners'
+  import { browser } from '$app/environment'
 
   let timetableList: any[][][][]
 
-  let timetableLatestGrdp = localStorage.getItem('timetable-latest-grdp')?.split('-') || ['1', '1']
+  let timetableLatestGrdp = ['1', '1']
+  if (browser) timetableLatestGrdp = localStorage.getItem('timetable-latest-grdp')?.split('-') || ['1', '1']
   let grd = timetableLatestGrdp[0]
   let grp = timetableLatestGrdp[1]
   let selected = grd + '-' + grp
@@ -36,7 +37,6 @@ import { SyncLoader } from 'svelte-loading-spinners'
       grp = grdp[1]
 
       localStorage.setItem('timetable-latest-grdp', value)
-      updateGrdp(value)
   }
 </script>
 
