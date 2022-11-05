@@ -1,7 +1,7 @@
 <script lang="ts">
   import Todo from './Todo.svelte'
   import Meal from './Meal.svelte'
-  // import Schedule from './Schedule.svelte'
+  import Schedule from './Schedule.svelte'
   import Timetable from './Timetable.svelte'
 </script>
 
@@ -9,7 +9,7 @@
   <Todo />
   <Timetable />
   <Meal />
-  <!-- <Schedule /> -->
+  <Schedule />
 </div>
 
 <style lang="scss">
